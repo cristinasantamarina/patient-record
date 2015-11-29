@@ -1,0 +1,21 @@
+<head>
+  <title>Patients</title>
+</head>
+ 
+<body>
+  <div class="container">
+    <header>
+      <h1>Patient List</h1>
+    </header>
+ 
+    <ul>
+      {{#each patients}}
+        {{> patient}}
+      {{/each}}
+    </ul>
+  </div>
+</body>
+ 
+<template name="patient">
+  <li>{{text}}</li>
+</template>
