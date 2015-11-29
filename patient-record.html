@@ -3,9 +3,13 @@
 </head>
  
 <body>
-  <div class="container">
+<div class="container">
     <header>
-      <h1>Patient List</h1>
+      <h1>Patients List</h1>
+ 
+      <form class="new-patient">
+        <input type="text" name="text" placeholder="Type to add a new patient" />
+      </form>
     </header>
  
     <ul>
@@ -17,5 +21,11 @@
 </body>
  
 <template name="patient">
-  <li>{{text}}</li>
+   <li class="{{#if checked}}checked{{/if}}">
+    <button class="delete">&times;</button>
+ 
+    <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
+ 
+    <span class="text">{{text}}</span>
+  </li>
 </template>
