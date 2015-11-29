@@ -15,18 +15,18 @@ if (Meteor.isClient) {
       event.preventDefault();
  
       // Get value from form element
-      var text = event.target.text.value;
+      var name = event.target.name.value;
  
       // Add a patient to the MongoDB collection
       Patients.insert({
-        text: text,
+        name: name,
         createdAt: new Date(),            // current time
         owner: Meteor.userId(),           // _id of logged in user
         username: Meteor.user().username  // username of logged in user
       });
  
       // Clear form
-      event.target.text.value = "";
+      event.target.name.value = "";
     }
   });
  

@@ -14,7 +14,7 @@
       {{#if currentUser}}
 
         <form class="new-patient">
-          <input type="text" name="text" placeholder="Type to add new patient" />
+          <input type="name" name="name" placeholder="Type to add new patient" />
         </form>
 
       {{else}}
@@ -39,6 +39,6 @@
  
     <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
  
-    <span class="text"><strong>{{text}}</strong> - <i>created by {{username}} on {{prettifyDate timestamp}}</i></span>
+    <span class="text"><strong>{{name}}</strong> - <i>created by {{username}} on {{prettifyDate timestamp}}</i></span>
   </li>
 </template>
