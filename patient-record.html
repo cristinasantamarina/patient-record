@@ -3,18 +3,24 @@
 </head>
  
 <body>
+
 <div class="container">
     <header>
+
+      <span class="account">{{> loginButtons}}</span>
+
       <h1>Patients to visit today</h1>
 
-      {{> loginButtons}}
-
       {{#if currentUser}}
+
         <form class="new-patient">
           <input type="text" name="text" placeholder="Type to add new patient" />
         </form>
+
+      {{else}}
+        <div class="prompt">Please login to add new patients to the list</div>
+
       {{/if}}
- 
     </header>
  
     <ul>

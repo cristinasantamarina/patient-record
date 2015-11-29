@@ -29,6 +29,22 @@ header {
   position: relative;
 }
 
+.account {
+  color: #FFFFFF;
+  background: #FF4C4C;
+  padding: 20px 15px 15px 15px;
+  text-align: right;
+  position: relative;
+}
+
+.prompt {
+  color: #FFFFFF;
+  background: #FF4C4C;
+  padding: 20px 15px 15px 15px;
+  text-align: left;
+  position: relative;
+}
+
 #login-buttons {
   display: block;
 }
