@@ -13,7 +13,7 @@ body {
   padding: 0;
   margin: 0;
 
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .container {
@@ -48,8 +48,9 @@ form {
   position: relative;
 }
 
-.new-task input {
+.new-patient input {
   box-sizing: border-box;
+  color: #FFFFFF;
   padding: 10px 0;
   background: transparent;
   border: none;
@@ -58,7 +59,7 @@ form {
   font-size: 1em;
 }
 
-.new-task input:focus{
+.new-patient input:focus{
   outline: 0;
 }
 
@@ -119,7 +120,7 @@ header .hide-completed {
     clear: both;
   }
 
-  .new-task input {
+  .new-patient input {
     padding-bottom: 5px;
   }
 }
