@@ -17,7 +17,7 @@ if (Meteor.isClient) {
       // Get value from form element
       var text = event.target.text.value;
  
-      // Insert a task into the collection
+      // Add a patient to the MongoDB collection
       Patients.insert({
         text: text,
         createdAt: new Date(),            // current time
@@ -47,7 +47,7 @@ if (Meteor.isClient) {
   });
 
   Template.registerHelper("prettifyDate", function (event) {
-    return new Date(event).toString('yyyy-MM-dd')
+    return new Date().toString('yyyy-MM-dd')
   });
 
 }
