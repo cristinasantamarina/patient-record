@@ -45,4 +45,9 @@ if (Meteor.isClient) {
   Accounts.ui.config({
     passwordSignupFields: "USERNAME_ONLY"
   });
+
+  Template.registerHelper("prettifyDate", function (event) {
+    return new Date(event).toString('yyyy-MM-dd')
+  });
+
 }

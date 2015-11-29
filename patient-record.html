@@ -23,6 +23,8 @@
       {{/if}}
     </header>
  
+    <p>render current date here</p>
+
     <ul>
       {{#each patients}}
         {{> patient}}
@@ -37,6 +39,6 @@
  
     <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
  
-    <span class="text"><strong>{{text}}</strong> - <i>created by {{username}}</i></span>
+    <span class="text"><strong>{{text}}</strong> - <i>created by {{username}} on {{prettifyDate timestamp}}</i></span>
   </li>
 </template>
