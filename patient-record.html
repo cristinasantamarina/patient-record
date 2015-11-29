@@ -13,9 +13,14 @@
 
       {{#if currentUser}}
 
+      <div class="prompt">Type a patient's name below to add it to the list. There are "{{patientsCount}}" patients waiting to be seen.
+      </div>
+
+      <div class="textbox">
         <form class="new-patient">
-          <input type="name" name="name" placeholder="Type to add new patient" />
+          <input type="name" name="name" placeholder="" />
         </form>
+      </div>
 
       {{else}}
         <div class="prompt">Please login to add new patients to the list</div>

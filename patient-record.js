@@ -7,6 +7,11 @@ if (Meteor.isClient) {
       // Show newest patients at the top
       return Patients.find({}, {sort: {createdAt: -1}});
     }
+
+    // patientsCount: function () {
+      // Show total patients count
+      // return Patients.find().count()
+    // }
   });
  
   Template.body.events({

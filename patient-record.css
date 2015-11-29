@@ -45,6 +45,15 @@ header {
   position: relative;
 }
 
+.textbox {
+  color: #FFFFFF;
+  font-size: 1.5em;
+  background: #FF4C4C;
+  padding: 10px 15px 15px 15px;
+  text-align: left;
+  position: relative;
+}
+
 #login-buttons {
   display: block;
 }
